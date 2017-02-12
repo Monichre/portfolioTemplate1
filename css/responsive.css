@@ -1,0 +1,362 @@
+/*          Responsive styles
+================================================== */
+/*                     Tablet Landscape
+=======================================================================================*/
+
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+    /*   About Section                
+============================ */
+    
+    .about-section {
+        padding-bottom: 100px;
+    }
+    .ab-inf {
+        margin-left: 20px;
+    }
+    /*   Offer Section                
+============================ */
+    
+    section.impres h3 {
+        letter-spacing: 1px;
+    }
+    /*   Services Section                
+============================ */
+    
+    .serview-overly::after {
+        width: 90%;
+    }
+    .promotab-itms .panel {
+        padding-bottom: 32px;
+    }
+    /*   portfolio Section                
+============================ */
+    
+    .portfolio-warp .product-detail h4,
+    .portfolio-warp .product-detail-bottom h4 {
+        font-size: 19px;
+    }
+    .portfolio-2 .product-detail,
+    .portfolio-4 .product-detail,
+    .portfolio-6 .product-detail {
+        margin-top: 208px;
+    }
+    /*   testimonial Section                
+============================ */
+    
+    .testimonial-section {
+        padding-bottom: 80px;
+    }
+}
+/*                      Tablet Portrait
+=======================================================================================*/
+
+@media (min-width: 768px) and (max-width: 991px) {
+    /*   Sider Section                
+============================ */
+    
+    .nivo-controlNav {
+        top: 46%;
+    }
+    /*   About Section                
+============================ */
+    
+    .about-section {
+        padding-bottom: 80px;
+    }
+    .about-warp .col-sm-5 {
+        width: 100%;
+    }
+    .about-warp .col-sm-2 {
+        width: 100%;
+        text-align: center;
+    }
+    .about-right {
+        text-align: center;
+    }
+    .about-left .about-more {
+        text-align: center;
+    }
+    .about-left h3 {
+        text-align: center;
+    }
+    .about-left {
+        margin-top: -88px;
+    }
+    .ab-inf {
+        margin-top: 19px;
+        padding: 0px 17px;
+    }
+    .ab-inf p {
+        font-size: 13px;
+    }
+    /*   Offer Section                
+============================ */
+    .choose-us .btn-chos {
+        padding: 15px 10px;
+        min-width: 83px;
+        letter-spacing: 1px;
+        margin-top: 17px;
+    }
+    /*   Services Section                
+============================ */
+    
+    .promotab-itms .panel-title a {
+        font-size: 18px;
+    }
+    .serview-overly::after {
+        width: 87%;
+    }
+    .promotab-itms .panel-title::before {
+        top: 80px;
+    }
+    .promotab-itms .panel {
+        padding-bottom: 40px;
+    }
+    .portfolio-1 .product-detail::before,
+    .portfolio-3 .product-detail::before,
+    .portfolio-5 .product-detail::before {
+        left: -18%;
+    }
+    .portfolio-2 .product-detail::before,
+    .portfolio-4 .product-detail::before,
+    .portfolio-6 .product-detail::before {
+        left: 91%;
+        margin-left: 15px;
+    }
+}
+/*                          Phone
+=======================================================================================*/
+
+@media only screen and (max-width: 767px) {
+    #main-menu > li > a {
+        font-size: 15px;
+        padding: 14px 5px;
+    }
+    #menu-toggle {
+        top: 8px;
+        right: -60px;
+    }
+    .nivo-caption {
+        display: none !important;
+    }
+    .nivo-controlNav {
+        top: 49%;
+    }
+    .nivo-controlNav a {
+        height: 6px;
+        margin-bottom: 9px;
+        width: 6px;
+    }
+    .nivo-controlNav a::before {
+        height: 10px;
+        width: 10px;
+        left: -2px;
+        top: -2px;
+    }
+    #socials > li > a {
+        padding: 10px 5px;
+    }
+    /*   About Section                
+============================ */
+    
+    .about-warp {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+    .about-right img {
+        margin-left: 0px;
+        top: -25px;
+    }
+    .about-left h3 {
+        text-align: center;
+    }
+    .about-left .about-more {
+        text-align: center;
+    }
+    .about-section {
+        padding-bottom: 80px;
+    }
+    .about-left {
+        margin-top: -30px;
+    }
+    .ab-inf {
+        margin-top: 20px;
+    }
+    .ab-inf p {
+        text-align: center;
+    }
+    /*   Offer Section                
+============================ */
+    
+    .choose-us {
+        padding-top: 90px;
+    }
+    section.impres h3 {
+        font-size: 20px;
+        text-align: left;
+        text-transform: capitalize;
+        letter-spacing: 1px;
+        margin-top: 12px;
+    }
+    section.impres p {
+        font-size: 17px;
+        letter-spacing: 1px;
+        margin-top: 15px;
+        margin-bottom: 23px;
+    }
+    /*   Services Section                
+============================ */
+    
+    .base-header h3 {
+        letter-spacing: 0px;
+        font-size: 39px;
+        line-height: 40px;
+    }
+    .promotab-section {
+        padding-bottom: 64px;
+    }
+    .promotab-itms .panel-title a {
+        font-size: 16px;
+        letter-spacing: 1px;
+    }
+    .serview-overly::after {
+        width: 88%;
+    }
+    .promotab-itms .panel {
+        padding-bottom: 20px;
+        margin-bottom: 30px;
+    }
+    .serview-overly::after {
+        bottom: 0px;
+        top: 0px;
+        width: 100%;
+    }
+    .serview-overly::after {
+        background: none;
+    }
+    .serview-overly::after {
+        -webkit-box-shadow: none;
+    }
+    .service-margin {
+        margin-top: 0px;
+    }
+    .serview-overly:hover {
+        -ms-transform: scale3d(1, 1, 1);
+        -moz-transform: scale3d(1, 1, 1);
+        -webkit-transform: scale3d(1, 1, 1);
+        transform: scale3d(1, 1, 1);
+    }
+    /*   portfolio Section                
+============================ */
+    
+    .portfolio-1 .product-detail,
+    .portfolio-3.product-detail,
+    .portfolio-5 .product-detail {
+        margin-top: 45px;
+    }
+    .portfolio-2 .product-detail,
+    .portfolio-4 .product-detail,
+    .portfolio-6 .product-detail {
+        margin-top: 0px;
+    }
+    .portfolio-2 .portfolio-hover,
+    .portfolio-4 .portfolio-hover,
+    .portfolio-6 .portfolio-hover {
+        margin-top: 70px;
+    }
+    .product-detail::before {
+        left: 50%;
+        margin-left: -44px;
+    }
+    .portfolio-warp .product-detail,
+    .portfolio-warp .product-detail-bottom {
+        text-align: center;
+    }
+    .portfolio-warp:hover .product-detail::before {
+        width: 90px !important;
+        margin-left: -47px !important;
+    }
+    .portfolio-2 .product-detail::before,
+    .portfolio-4 .product-detail::before,
+    .portfolio-6 .product-detail::before {
+        left: 50%;
+        margin-left: -44px;
+    }
+    .port-list {
+        padding-left: 0px;
+        margin-top: 20px;
+    }
+    .remodal h3 {
+        margin: 40px 0 25px 0;
+        font-size: 27px;
+    }
+    .port-modal-img {
+        margin-top: 20px;
+    }
+    .full-view {
+        top: 0px;
+        left: 30%;
+    }
+    /*   testimonial Section                
+============================ */
+    
+    .testimonial-section {
+        padding-bottom: 90px;
+    }
+    .testimonial .owl-carousel .item .testi-comment h4 {
+        font-weight: 600;
+        font-size: 13px;
+    }
+    .testimonial-section .owl-theme .owl-controls {
+        margin-top: 193px;
+    }
+    .testimonial .owl-item.center .testi-comment {
+        margin: 0 0px 0 0px;
+        padding: 10px 0px 10px 0px;
+    }
+    .testimonial .owl-theme .owl-dots .owl-dot.active span,
+    .owl-theme .owl-dots .owl-dot:hover span {
+        background: #e67e22;
+    }
+    .testimonial .owl-theme .owl-dots .owl-dot span {
+        border: 1px solid #e67e22;
+    }
+    /*   footer  Section                
+============================ */
+    
+    .contact-addrs {
+        padding: 0px 15px 35px;
+    }
+    /*   footer  Section                
+============================ */
+    
+    .social_footer a {
+        margin: 0px 11px;
+    }
+}
+/* Mobile Vertical Layout: 488px 
+===============================================================================*/
+
+@media only screen and (min-width: 488px) and (max-width: 767px) {
+    /*   Service  Section                
+============================ */
+    
+    .promotab-section .col-xs-12 {
+        width: 50%;
+    }
+    .promotab-itms .panel-title a {
+        font-size: 18px;
+    }
+    .promotab-itms .panel-title::before {
+        top: 45px;
+    }
+    .full-view {
+        left: 40%;
+    }
+    /*   About  Section                
+============================ */
+    
+    .about-right {
+        text-align: center;
+    }
+}
