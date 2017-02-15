@@ -28,7 +28,7 @@
  @import url('https://fonts.googleapis.com/css?family=Raleway');
  body {
      font-size: 15px;
-     font-family: 'Raleway', sans-serif;
+     font-family: 'Arsenal', sans-serif;
      background: transparent;
      line-height: 1.6;
      font-weight: 400;
@@ -181,11 +181,9 @@
  .hvr-bounce-to-top:active::before {
      background: #333;
  }
- small {
-     font-family: 'Source Sans Pro';
- }
+
  section {
-     background: #fff;
+     /*background: #fff;*/
  }
  #preloader {
      position: fixed;
@@ -237,7 +235,7 @@
      -o-transition: all 0.3s ease-out;
      transition: all 0.3s ease-out;
      height: 2px;
-     background: #e67e22
+     background: #aec6cf
  }
  /*----------------------------------------------------
   2. Header Section
@@ -439,7 +437,7 @@
      font-weight: 700;
  }
  #main-menu > li > a:hover {
-     color: #e67e22;
+     color: #aec6cf;
  }
  #socials {
      text-align: center;
@@ -455,7 +453,7 @@
  #socials > li > a {
      text-align: center;
      font-size: 18px;
-     color: #e67e22;
+     color: #aec6cf;
      border: 1px solid #eee;
  }
  #socials > li > a:hover {
@@ -532,7 +530,7 @@
 .modCloseButton{
     width: 65px;
     height: 80px;
-    background: #e67e22;
+    background: #aec6cf;
     text-align: center;
     position: relative;
     cursor: pointer;
@@ -617,7 +615,7 @@
     position: relative;
 }
 .mainMenu ul li a:hover, .mainMenu > ul > li.active > a{
-    color: #e67e22;
+    color: #aec6cf;
 }
 
 
@@ -760,10 +758,10 @@
      width: 18px;
  }
  .nivo-control.active {
-     background: #e67e22;
+     background: #aec6cf;
  }
  .nivo-controlNav a.active::before {
-     border-color: #e67e22;
+     border-color: #aec6cf;
      font-weight: bold;
      transition: all 0.5s ease 0s;
  }
@@ -819,7 +817,7 @@ header .container {
   letter-spacing: 5px;
   font-size: 20px;
   font-weight: 700;
-  color: #e67e22;
+  color: #aec6cf;
 }
 .ban1_txt h2 {
     font-size: 54px;
@@ -995,8 +993,7 @@ header .container {
      border: none;
      text-align: center;
      padding-bottom: 67px;
-     box-shadow: 0 1px 5px 0px rgba(0, 0, 0, 0.27);
-     -webkit-box-shadow: 0 1px 5px 0px rgba(0, 0, 0, 0.27);
+
  }
  .serview-overly:hover {
      -ms-transform: scale3d(1.05, 1.05, 1.05);
@@ -1005,7 +1002,7 @@ header .container {
      transform: scale3d(1.05, 1.05, 1.05);
  }
  .promotab-itms .panel::before {
-     background-color: rgba(51, 44, 37, 0.5);
+     background-color: #333;
      content: "";
      display: inline-block;
      position: absolute;
@@ -1024,7 +1021,7 @@ header .container {
      transition: transform 0.3s linear;
  }
  .serview-overly::after {
-     background: #685f5f80 none repeat scroll 0 0;
+     background: #333 none repeat scroll 0 0;
      bottom: 15px;
      content: "";
      position: absolute;
@@ -1063,7 +1060,7 @@ header .container {
      margin: 0 auto;
      width: 50px;
      height: 4px;
-     border-top: 1px solid #e67e22;
+     border-top: 1px solid #aec6cf;
  }
  .promotab-itms .panel-title a {
      font-size: 16px;
@@ -1154,7 +1151,7 @@ header .container {
      border-radius: 3px;
      -moz-border-radius: 3px;
      -webkit-border-radius: 3px;
-     background: #e67e22;
+     background: #aec6cf;
  }
  .skill-bar-percent {
      position: absolute;
@@ -1311,7 +1308,7 @@ header .container {
  .social_port a {
      margin: 0px 2px;
      font-size: 18px;
-     color: #e67e22;
+     color: #aec6cf;
  }
  .social_port i {
      margin-left: 12px;
@@ -1764,7 +1761,7 @@ header .container {
  .social_footer a {
      margin: 0px 12px;
      font-size: 18px;
-     color: #e67e22;
+     color: #aec6cf;
  }
  .social_footer a:hover {
      color: #8D7636;
@@ -1774,7 +1771,7 @@ header .container {
  }
  .footer-links a {
      margin: 0px 12px;
-     color: #e67e22;
+     color: #aec6cf;
      font-size: 15px;
  }
  .footer-links a:hover {
@@ -1806,4 +1803,27 @@ header .container {
  .scrollup:active,
  .scrollup:focus {
      color: rgba(255, 255, 255, 0.90);
+ }
+
+ .left {
+   background-image: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/74452/website-code.png");
+ }
+
+ .right {
+   background-image: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/74452/website-post-its.png");
+ }
+
+ .split-pane {
+   padding-top: 1em;
+   background-size: cover;
+   background-repeat: no-repeat;
+   background-position: center center;
+   font-size: 2em;
+   color: white;
+ }
+ @media(min-width: 500px) {
+   .split-pane {
+     padding-top: 2em;
+     height: 100%;
+   }
  }
