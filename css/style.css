@@ -28,7 +28,8 @@
  @import url('https://fonts.googleapis.com/css?family=Raleway');
  body {
      font-size: 15px;
-     font-family: 'Arsenal', sans-serif;
+     /*font-family: 'Arsenal', sans-serif;*/
+     font-family: 'Fjalla One', sans-serif;
      background: transparent;
      line-height: 1.6;
      font-weight: 400;
@@ -80,6 +81,7 @@
  h4 {
      font-size: 18px;
      line-height: 26px;
+     margin: 1em 0;
  }
  h5 {
      font-size: 14px;
@@ -183,7 +185,7 @@
  }
 
  section {
-     /*background: #fff;*/
+     background: #fff;
  }
  #preloader {
      position: fixed;
@@ -201,12 +203,13 @@
      text-transform: uppercase;
      text-align: center;
      padding-bottom: 20px;
+     margin: 0!important;
  }
  .base-header small {
      font-size: 18px;
      text-transform: uppercase;
      font-weight: 300;
-     color: #1B1B1B66;
+     /*color: #fff;*/
      display: block;
      line-height: 0.8;
      letter-spacing: 8px;
@@ -862,6 +865,11 @@ header .container {
  .ab-inf {
      margin-top: 90px;
  }
+ .ab-inf p {
+     font-family: 'Reem Kufi', sans-serif!important;
+     font-size: 18px;
+     color: #333;
+ }
  .about-left .about-more {
      margin-top: 23px;
      text-align: left;
@@ -910,7 +918,8 @@ header .container {
      color: #808080;
      padding-top: 110px;
      padding-bottom: 110px;
-     background-image: url("../images/background/b1.jpg");
+     /*background-image: url("../images/background/b1.jpg");*/
+     background: #747474;
  }
  .text-riht {
      text-align: right;
@@ -935,10 +944,11 @@ header .container {
  }
  section.impres p {
      text-align: left;
-     font-size: 16px;
+     font-size: 18px;
      letter-spacing: 4px;
      color: #fff;
      margin-top: 10px;
+     font-family: 'Reem Kufi', sans-serif!important;
  }
  section.impres small {
      color: #fff;
@@ -949,18 +959,21 @@ header .container {
  .choose-us .col-lg-5.col-sm-5 {
      color: #b6b1b1;
  }
+ .choose-us a {
+     background: #fff !important;
+ }
  .choose-us a:hover {
-     color: #333 !important;
+     color: #fff !important;
  }
  .choose-us .hvr-bounce-to-top::before {
-     background: #fff;
+     background: #333;
  }
  .choose-us .hvr-bounce-to-top:hover::before {
-     background: #fff;
+     background: #333;
  }
  .choose-us .btn-chos {
-     border: 3px solid #fff;
-     color: #fff;
+     border: 3px solid #333;
+     color: #333;
  }
  /*----------------------------------------------------
 	5. Services Section
@@ -1168,7 +1181,7 @@ header .container {
  .portfolio-section {
      padding-top: 65px;
      padding-bottom: 100px;
-     background: #f9f3f3;
+     background: #eeeeee;
  }
  .portfolio-warp {
      margin-bottom: 50px;
@@ -1182,9 +1195,11 @@ header .container {
      margin-top: 0px;
  }
  .portfolio-warp .portfolio-hover {
+     height: 380px;
      overflow: hidden;
      position: relative;
  }
+
  .full-view {
      position: absolute;
      top: 210px;
@@ -1207,8 +1222,9 @@ header .container {
      -webkit-transform: scale3d(1.1, 1.1, 1);
      transform: scale3d(1.1, 1.1, 1);
  }
- .portfolio-warp .portfolio-hover img {
+ .portfolio-warp .portfolio-hover img, .portfolio-warp .portfolio-hover video {
      width: 100%;
+     height: 100%;
      max-width: 375px;
      margin: auto;
      -webkit-transition: opacity 1s, -webkit-transform 1s;
@@ -1216,6 +1232,9 @@ header .container {
      -webkit-backface-visibility: hidden;
      backface-visibility: hidden;
      opacity: 0.8;
+ }
+ .portfolio-warp .portfolio-hover video {
+     background: black;
  }
  .product-detail {
      position: relative;
@@ -1276,7 +1295,7 @@ header .container {
  }
  .portfolio-warp .product-detail h4,
  .portfolio-warp .product-detail-bottom h4 {
-     font-family: 'Raleway', sans-serif;
+     /*font-family: 'Raleway', sans-serif;*/
      opacity: 0.7;
      font-weight: 700;
      font-size: 21px;
@@ -1419,14 +1438,14 @@ header .container {
  /* Remodal inner content */
 
  .remodal h3 {
-     font-family: 'Raleway', sans-serif;
+     font-family: 'Fjalla One', sans-serif;
      color: white;
      margin: 40px 0 40px 0;
  }
  .remodal p {
      font-family: 'Raleway', sans-serif;
      color: white;
-     opacity: 0.8;
+     letter-spacing: 1px;
      font-weight: 300;
      text-align: left;
      margin-top: -4px;
@@ -1559,11 +1578,13 @@ header .container {
 
  .testimonial-section {
      padding-top: 65px;
-     padding-bottom: 132px;
-     background-image: url("../images/background/testimonial.jpg");
+
+     /*background-image: url("../images/background/testimonial.jpg");*/
+     background: #1F1F1F;
  }
  .testimonial-section .base-header h3 {
      margin-bottom: -5px;
+     color: white;
  }
  .testimonial .owl-carousel {
      margin-bottom: 0px;
@@ -1592,7 +1613,7 @@ header .container {
  .testimonial .owl-carousel .item .testi-comment p {
      font-size: 15px;
      font-weight: 400;
-
+     letter-spacing: 1px;
      margin-top: 30px;
      margin-bottom: 30px;
      color: #ffffff;
@@ -1600,6 +1621,7 @@ header .container {
  .testimonial .owl-carousel .item .testi-comment h4 {
      font-weight: 600;
      font-size: 15px;
+     color: #aec6cf;
  }
  .testimonial .owl-item.center .testi-comment {
      visibility: visible;
@@ -1621,11 +1643,13 @@ header .container {
  }
  .testimonial .owl-theme .owl-controls .owl-nav [class*="owl-"] {
      border: 1px solid transparent;
+     color: rgb(204, 0, 0);
      -webkit-transition: all 0.4s ease-out 0s;
      -moz-transition: all 0.4s ease-out 0s;
      -ms-transition: all 0.4s ease-out 0s;
      -o-transition: all 0.4s ease-out 0s;
      transition: all 0.4s ease-out 0s;
+
  }
  .testimonial:hover .owl-theme .owl-controls .owl-nav [class*="owl-"] {
      -webkit-transition: all 0.4s ease-out 0s;
@@ -1634,7 +1658,7 @@ header .container {
      -o-transition: all 0.4s ease-out 0s;
      transition: all 0.4s ease-out 0s;
      font-size: 40px;
-     color: #000;
+     color: #aec6cf;
  }
  .testimonial .owl-theme .owl-controls .owl-nav .owl-prev {
      top: 127px;
@@ -1645,6 +1669,7 @@ header .container {
  .tesi-rating {
      position: relative;
      top: -10px;
+     color: rgb(204, 0, 0);
  }
  /*----------------------------------------------------
    8. Contact  Section
@@ -1805,25 +1830,44 @@ header .container {
      color: rgba(255, 255, 255, 0.90);
  }
 
- .left {
-   background-image: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/74452/website-code.png");
+ .skills {
+     margin-top: 20px;
+     margin-bottom: 20px;
  }
 
- .right {
-   background-image: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/74452/website-post-its.png");
+.svg-container {
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    z-index: 10;
+    width: 200px;
+}
+.svg-container h3 {
+    font-family: 'Fjalla One', sans-serif;
+    color: rgb(51, 51, 51)!important;
+    font-size: 26px;
+    padding-bottom: 10px;
+    text-align: center;
+    width: max-content;
+    display: block;
+    margin-left: auto;
+    border-bottom: 2px solid rgb(204, 0, 0);
+}
+
+@media (max-width: 991px) {
+  .svg-container h3 {
+      width: auto;
+  }
+}
+ #hands-svg, #concept-svg {
+     display: block;
+
  }
 
- .split-pane {
-   padding-top: 1em;
-   background-size: cover;
-   background-repeat: no-repeat;
-   background-position: center center;
-   font-size: 2em;
-   color: white;
- }
- @media(min-width: 500px) {
-   .split-pane {
-     padding-top: 2em;
-     height: 100%;
-   }
- }
+
+.dev {
+    color: #b00000;
+    font-size: .75em!important;
+    font-weight: 700!important;
+    letter-spacing: normal!important;
+}

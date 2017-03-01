@@ -1,0 +1,265 @@
+// Breakpoints
+@mixin breakpoint($point) {
+  @if $point==mobile {
+    @media (max-width: 767px) {
+      @content;
+    }
+  }
+  @else if $point==mobile-up {
+    @media (min-width: 768px) {
+      @content;
+    }
+  }
+  @else if $point==tablet {
+    @media (max-width: 991px) {
+      @content;
+    }
+  }
+  @else if $point==tablet-up {
+    @media (min-width: 992px) {
+      @content;
+    }
+  }
+  @else if $point==laptop {
+    @media (max-width: 1220px) {
+      @content;
+    }
+  }
+  @else if $point==laptop-up {
+    @media (min-width: 1221px) {
+      @content;
+    }
+  }
+}
+
+// Colors
+// Monos
+$white: #fff;
+$light-grey: #f3f3f3;
+$mid-grey: #e9e9e9;
+$dark-grey: #9b9b9b;
+$black: #2d2d2d;
+// Brand
+
+// Typography
+$display-font: "din-2014-narrow", "Arial Narrow", Helvetica, Arial, sans-serif;
+$body-font: "roboto", sans-serif;
+$body-font-size: 18px;
+
+
+
+.slider {
+  min-height: 300px;
+  overflow: hidden;
+  transition: 0.6s;
+  position: relative;
+  width: 100%;
+  max-width: 1200px;
+  margin:auto;
+  font-family: 'Fjalla One', sans-serif;
+
+  .controls {
+    position: absolute;
+    z-index: 9999;
+    right: 0;
+    top: 20px;
+    height: 260px;
+    @include breakpoint(mobile) {
+      width: 100%;
+      height: 50px;
+      top: 50%;
+      transform: translateY(-50%);
+    }
+    button {
+      background: transparent;
+      border: none;
+      display: block;
+      width: 20px;
+      position: absolute;
+      padding: 0;
+      outline: none;
+      cursor: pointer;
+      &.previous {
+        top: 0;
+        right: 25px;
+        @include breakpoint(mobile-up) {
+        //   transform: rotate(-45deg);
+        }
+      }
+      &.next {
+        @include breakpoint(mobile-up) {
+          top: 20px;
+          right: 50px;
+        //   transform: rotate(135deg);
+        }
+        @include breakpoint(mobile) {
+          top: 0;
+          left: 20px;
+          transform: rotate(180deg);
+        }
+      }
+      rect {
+        fill: $black;
+      }
+      &:hover {
+        rect {
+          fill: $white;
+        }
+      }
+    }
+  }
+  &__inner {
+    width: calc(75% + 150px);
+    @include breakpoint(mobile) {
+      width: 100%;
+    }
+    max-width: 100%;
+    margin: auto;
+    position: relative;
+    min-height: 300px;
+    overflow: hidden;
+    float: right;
+  }
+  &__slide {
+    min-height: 300px;
+    width: 100%;
+    position: absolute;
+
+    bottom: 0;
+    left: 0;
+    transform: translate(-300px, 100%);
+    @include breakpoint(mobile) {
+      transform: translate(-100%, 0);
+    }
+
+    &__content {
+      display: flex;
+      padding: 30px;
+      border-top-left-radius: 5px;
+      border-top-right-radius: 5px;
+      border: 2px solid rgb(51, 51, 51);
+    box-shadow: 5px 5px -5px gray;
+      flex-direction: column;
+      justify-content: flex-start;
+      position: absolute;
+      width: 250px;
+      overflow: hidden!important;
+      top: 0;
+      bottom: 0;
+      left: 300px;
+      @include breakpoint(mobile) {
+        padding: 55px 60px 30px;
+        left: 0;
+        background-color: transparent !important; //!important to overwrite inline style
+      }
+
+        @keyframes slide-element {
+          0% {transform: translate(30%, 30%)}
+          20% {transform: none;}
+          80% {transform: none;}
+          100% {transform: translate(30%, 30%)}
+        }
+
+        svg {
+          animation: slide-element 4s cubic-bezier(.5, 0, 0, 1) infinite;
+          width: 100vw;
+          height: 100%;
+          transform-origin: 100% 50%;
+          max-height: 70%;
+          display: block;
+          position: absolute;
+          max-width: 70%;
+          right: 0;
+          bottom: 0;
+        }
+
+        svg path:last-child {
+          stroke-dasharray: 185 0;
+          animation: loop 4s cubic-bezier(0, 0, .5, 1) infinite;
+        }
+
+        @keyframes loop {
+          0% {stroke:#aaa;
+            stroke-opacity: .35;
+            stroke-dashoffset: -180px;
+            stroke-dasharray: 200px 200px;
+          }
+          30% {
+            stroke-opacity: .35;
+            stroke:#aaa;
+
+          }
+          40% {
+            stroke: currentcolor;
+            stroke-dasharray: 200px 0px;
+            stroke-dashoffset: 2px;
+          }
+          80% {
+            stroke: currentcolor;
+            stroke-opacity: 1;
+          }
+          100% {
+            stroke-dashoffset: 220px;
+            stroke-opacity: 0;
+            stroke-dasharray: 200px 200px;
+          }
+        }
+      h3 {
+          font-family: 'Fjalla One', sans-serif;
+          margin: 0;
+          line-height: normal!important;
+          font-size: 28px!important;
+          border-bottom: 1px solid rgb(51, 51, 51);
+          margin: 10px 0;
+          color: rgb(51, 51, 51);
+
+          span.city {
+              color: #777!important;
+              font-size: 20px!important;
+          }
+
+      }
+      p {
+        margin: 10px 0;
+        display: -webkit-box;
+        -webkit-line-clamp: 4;
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+        font-size: 0.9em;
+        max-width: 600px;
+      }
+      &__categories {
+        padding: 10px 0 10px 10px;
+        // font-family: $display-font;
+        text-transform: uppercase;
+        a {
+          color: #aec6cf;
+          text-decoration: none;
+          &:hover {
+            color: $white;
+          }
+        }
+      }
+      header {
+          position: absolute;
+          width: 100%;
+          top: 0;
+          left: 0;
+          height: 5px;
+          background-color: rgb(51, 51, 51);
+      }
+    }
+    &--animate {
+      transition: 0.6s ease-in-out;
+    }
+    &--active {
+      transform: translate(0, 0);
+      & ~ .slider__slide {
+        transform: translate(300px, -100%);
+        @include breakpoint(mobile) {
+          transform: translate(100%, 0);
+        }
+      }
+    }
+  }
+}
